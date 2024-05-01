@@ -19,6 +19,7 @@ function responderRequisicao(requisicao, resposta){
         resposta.write('</head>');
         resposta.write('<body>');
         resposta.write('<h2>Tabuada do '+ tabuada +'</h2>');
+        resposta.write("<p>?tabuada= &sequencia=</p>");
         if(tabuada && sequencia){
             for(let i=1;i<=sequencia;i++){
                 resposta.write('<p>'+ i +' x '+ tabuada +' = '+ i*tabuada +'</p>');
